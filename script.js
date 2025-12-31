@@ -127,4 +127,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+    // Dark Mode Toggle
+    const themeToggle = document.querySelector('.theme-toggle');
+    themeToggle?.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        document.querySelector('.navbar').classList.toggle('dark');
+    });
+
 });
